@@ -16,7 +16,7 @@ node{
       sshCommand remote : remote, command: "ls -lrt"
   }     
   stage('Remote SSH 2') {
-    sshCommand remote : remote, command: "cd /home/opc/
+    sshCommand remote : remote, command: "cd /home/opc/"
     sshCommand remote : remote, command: "mkdir shaikimran07.sh"
   }
 }
