@@ -15,7 +15,7 @@ node{
   stage('step2') {
     sshCommand remote: remote, command: "sudo sh /home/opc/shaikimran07.sh"
   }
-  stage('step2') {
+  stage('step3') {
     sshCommand remote: remote, command: "pwd"
   }
 }
