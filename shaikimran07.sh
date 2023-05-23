@@ -1,5 +1,8 @@
 #!/bin/sh
+
 echo "new pipeline"
+
 cd /home/opc/
-sudo mkdir -p /home/opc/shaikimran07-$(date + %s)
+
+sudo mkdir -p /home/opc/ShaikImran07-$(date + %s)
 
