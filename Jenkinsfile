@@ -12,6 +12,14 @@ node{
         sshPut remote: remote, from: 'shaikimran07.sh', into: '/home/opc'
   }
   
+  stage('step2') {
+    sshCommand remote: remote, command: "sudo sh /home/opc/shaikimran07.sh"
+  }
+  stage('step2') {
+    sshCommand remote: remote, command: "pwd"
+  }
+}
+  
   
   
 
