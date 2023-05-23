@@ -8,13 +8,10 @@ node{
     stage('checkout') {
            checkout scm
   }  
-  stage('Remote SSH') {
-  sshCommand remote : remote, command: "cd /home/opc/"
-    sshCommand remote : remote, command: "mkdir shaikimran07.sh"
-     }     
-  stage('Remote SSH 2') {
-     // writeFile file: 'shaikimran07.sh', text: 'ls -lrt'
-       // sshScript remote: remote, script: "shaikimran07.sh"
+  stage('step1') {
+        sshPut remote: remote, from: 'shaikimran07.sh', into: '/home/opc'
   }
-  stage('Remote SSH 3') {
+  
+  
+  
 
