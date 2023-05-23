@@ -13,7 +13,7 @@ node{
   }
   
   stage('step2') {
-    sshCommand remote: remote, command: "sh shaikimran07.sh"
+    sshCommand remote: remote, command: "shaikimran07.sh"
   }
   stage('step3') {
     sshCommand remote: remote, command: "pwd"
