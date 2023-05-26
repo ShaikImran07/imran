@@ -11,7 +11,6 @@ node{
   stage('step1') {
         sshPut remote: remote, from: 'shaikimran07.sh', into: '/home/opc'
   }
-  
   stage('step2') {
     sshCommand remote: remote, command: "shaikimran07.sh"
   }
